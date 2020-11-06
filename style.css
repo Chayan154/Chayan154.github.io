@@ -109,6 +109,18 @@ a:hover,a.active {
     color: #0082e6;
 }
 
+.bg {
+    position: fixed;
+    background: url('https://cdn.discordapp.com/attachments/758660467190267955/773497892110467082/44753.jpg');
+    width: 100%;
+    height:  100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+}
+
+
+/*Making responsive*/
 @media (min-width: 752px) {
 
     .navbar {
