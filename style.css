@@ -6,90 +6,89 @@
     padding: 0%;
 }
 
-
 body {
     background-color: rgb(35, 35, 156);
 }
 
 .navbar {
-    background:rgb(86, 86, 194);
+    background: rgba(86, 86, 194, 0.5);
     height: 50px;
     width: 100%;
     position: fixed;
 }
 
 .logo {
-    line-height:50px;
-    padding-left:20px;
-    font-size:30px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 30px;
     font-family: 'Aladin', cursive;
     color: aliceblue;
 }
 
-.navbtn{
-    height:40px;
-    width:40px;
-    background-color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:fixed;
-    top:2px;
-    right:5px;
-    border-radius:4px;
-    border:3px solid #6F1E51;
-    transition:all 0.5s;
+.navbtn {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 2px;
+    right: 5px;
+    border-radius: 4px;
+    border: 3px solid #6f1e51;
+    transition: all 0.5s;
     cursor: pointer;
 }
 
 .btnsym {
-    height:4px;
-    width:30px;
-    background-color:#6F1E51;
-    border-radius:4px;
-    transition:all 0.5s;
+    height: 4px;
+    width: 30px;
+    background-color: #6f1e51;
+    border-radius: 4px;
+    transition: all 0.5s;
 }
 
 .btnsym::before,
 .btnsym::after {
-    content:'';
-    height:4px;
-    width:30px;
-    background-color:#6F1E51;
-    border-radius:4px;
-    position:absolute;
-    transition:all 0.5s;
+    content: '';
+    height: 4px;
+    width: 30px;
+    background-color: #6f1e51;
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.5s;
 }
 
 .btnsym::before {
-    transform:translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .btnsym::after {
-    transform:translateY(10px);
+    transform: translateY(10px);
 }
 
 .navopn .btnsym::before {
-    transform:rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .navopn .btnsym::after {
-    transform:rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
-.navopn .btnsym{
-    background:transparent;
+.navopn .btnsym {
+    background: transparent;
 }
 
 .navmenu {
-    position:fixed;
-    right:-60%;
-    top:50px;
-    width:60%;
-    height:auto;
-    background-color:white;
-    border-radius:5px;
-    transition-duration:.5s;
+    position: fixed;
+    right: -60%;
+    top: 50px;
+    width: 60%;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    transition-duration: 0.5s;
     list-style: none;
     cursor: pointer;
     text-align: center;
@@ -105,25 +104,24 @@ nav ul li a {
     text-decoration: none;
 }
 
-a:hover,a.active {
+a:hover,
+a.active {
     background: none;
     color: #0082e6;
 }
 
 .bg {
     position: fixed;
-    background: url('https://cdn.discordapp.com/attachments/758660467190267955/773497892110467082/44753.jpg');
+    background: url('https://wallup.net/wp-content/uploads/2016/02/18/283005-Arctic-sea-nature.jpg');
     width: 100%;
-    height:  100vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     z-index: -10;
 }
 
-
 /*Making responsive*/
 @media (min-width: 752px) {
-
     .navbar {
         height: 80px;
         display: flex;
@@ -131,9 +129,9 @@ a:hover,a.active {
     }
 
     .logo {
-        line-height:80px;
+        line-height: 80px;
         padding: 0px 40px;
-        font-size:50px;
+        font-size: 50px;
         width: auto;
         font-family: 'Aladin', cursive;
     }
@@ -144,8 +142,8 @@ a:hover,a.active {
 
     .navmenu {
         position: static;
-        height:80px;
-        width: auto ;
+        height: 80px;
+        width: auto;
         margin-right: auto;
         display: flex;
     }
@@ -162,9 +160,8 @@ a:hover,a.active {
 
     .bg {
         position: fixed;
-        background: url('https://cdn.discordapp.com/attachments/758660467190267955/773497892110467082/44753.jpg');
         width: 100%;
-        height:  100vh;
+        height: 100vh;
         background-size: cover;
         background-position: center;
     }
@@ -172,6 +169,4 @@ a:hover,a.active {
     .navmenu {
         transition-duration: 0s;
     }
-
 }
-
