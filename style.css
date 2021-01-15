@@ -86,7 +86,7 @@ body {
     top: 50px;
     width: 60%;
     height: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     transition-duration: 0.5s;
     list-style: none;
@@ -144,7 +144,10 @@ a.active {
         position: static;
         height: 80px;
         width: auto;
-        margin-right: auto;
+        margin-right: 10%;
+        margin-left: auto;
+        background-color: white;
+        transition-duration: 0s;
         display: flex;
     }
 
@@ -156,10 +159,6 @@ a.active {
 
     nav ul li a {
         font-size: 30px;
-    }
-
-    .navmenu {
-        transition-duration: 0s;
     }
 
     .bg {
