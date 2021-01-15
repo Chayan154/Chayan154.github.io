@@ -161,4 +161,8 @@ a.active {
     .navmenu {
         transition-duration: 0s;
     }
+
+    .bg {
+        background-position: 50% 10%;
+    }
 }
