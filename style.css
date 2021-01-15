@@ -125,7 +125,7 @@ a.active {
     .navbar {
         height: 80px;
         display: flex;
-        position: static;
+        position: fixed;
     }
 
     .logo {
@@ -156,14 +156,6 @@ a.active {
 
     nav ul li a {
         font-size: 30px;
-    }
-
-    .bg {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
     }
 
     .navmenu {
