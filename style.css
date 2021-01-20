@@ -141,18 +141,17 @@ a.active {
     }
 
     .navmenu {
+        display: flex;
+        justify-content: center;
         position: static;
         height: 80px;
-        width: auto;
-        margin-right: 10%;
         margin-left: auto;
         background-color: white;
         transition-duration: 0s;
-        display: flex;
     }
 
     nav ul li {
-        display: block;
+        display: inline-block;
         padding: 0px 20px;
         line-height: 80px;
     }
