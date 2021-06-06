@@ -104,10 +104,24 @@ nav ul li a {
     text-decoration: none;
 }
 
-a:hover,
-a.active {
+a:hover {
     background: none;
-    color: #0082e6;
+    color: #7ec1f5;
+}
+
+.active {
+    background: none;
+    color: #1c6399;
+}
+
+.dropdown {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+li:hover > .dropdown {
+    display: flex;
+    flex-direction: column;
 }
 
 .bg {
